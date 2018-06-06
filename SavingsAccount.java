@@ -1,18 +1,20 @@
 import java.util.*;
 import java.text.*;
 
-public class SavingsAccount extends BankAccount
+public class SavingsAccount extends Account
 {
-    public float savingsInterest;
+    public final float interestRate;
     public float initialBalance;
     public float dailyBalance;
     public float totalInterestAmt;
     
-    SavingsAccount(){}
+    SavingsAccount(){
+     interestrate = 4.0f;
+     }
     
     public SavingsAccount(String customerName,float amount)
     {
-        super(customerName,amount);
+        //super(customerName,amount);
         initialBalance = amount;
         //savingsInterest = 4.0;
     }
