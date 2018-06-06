@@ -1,0 +1,2 @@
+# BankABC
+Bank ABC wishes to operate all its customer transactions via a console application which prints the balance sheet. Each customer has a bank account which are of 2 types : Savings and Checking.  Customer enters transaction details which include date, amount, debit/credit. Interest is calculated on the "daily low" amount in the bank account as of each day. The monthly statement should print the interest accrued at the end of each month.
