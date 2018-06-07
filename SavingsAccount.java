@@ -132,7 +132,10 @@ public class SavingsAccount extends BankAccount
 	    int transIndex = 0;
 	    float monthlyInterestAccrued = 0;
 	    for (String ddmmyyyy : dateList) {
-	    	min_daily_balance = this.balance;
+	    	if(transIndex!=0)
+	        {
+	            min_daily_balance = this.balance;
+	        }
 	    	String trans_ddmmyyyy = null;
 	    	if (transIndex < sortedTransList.length)
 	    	{	
