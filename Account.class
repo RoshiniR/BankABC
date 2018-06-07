@@ -1,7 +1,0 @@
-public abstract class Account
-{
-    int interestRate;
-    
-    abstract void deposit();
-    abstract void withdraw();
-}
