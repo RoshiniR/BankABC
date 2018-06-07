@@ -1,0 +1,24 @@
+import java.util.Date;
+
+enum AccStatTransType 
+{
+    deposit, withdraw, interestcredited, monthlyInterest;
+}
+
+public class AccountStatementLine {
+	public Date datenow;
+	public AccStatTransType transType;
+	public float amount;
+	public float account_balance;
+    
+	AccountStatementLine(Date d, AccStatTransType ttype, float amount, float ac_bal) {
+		this.datenow = d;
+		this.transType = ttype;
+		this.amount = amount;
+		this.account_balance = ac_bal;
+	}
+	
+	public void printAccStmtLine() {
+		System.out.println(this.datenow+", "+this.transType+", "+this.amount+", "+this.account_balance);
+	}
+}
