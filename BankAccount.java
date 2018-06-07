@@ -1,36 +1,15 @@
 import java.util.*;
 import java.io.*;
 
-public class BankAccount
+public abstract class BankAccount
 {
-  String owner;
-  float balance;
-  Date date;
-  String accountType;
   
-  BankAccount()
-  {
-  }
+  abstract void evalInterestCompBalance();
   
-  public BankAccount(String customerName, String accType, float amount)
-  {
-    owner = customerName;
-    accountType = accType;
-    balance = amount;
-  }
+  abstract void deposit(float amount, String transdatestr);
   
-  public void deposit(float amount, Date dt)
-  {
-    balance = balance + amount;
-    // to-do date component
-    
-   }
-
-  public void print()
-    {
-    System.out.println("Name : " + owner);
-    System.out.println("Account Type : " + accountType);
-    System.out.println("Balance : " + balance);
-    }
+  abstract void withdraw(float amount, String transdatestr);
+  
+  abstract void printAccountStatement();
 
 }
